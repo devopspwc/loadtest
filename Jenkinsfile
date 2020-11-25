@@ -16,6 +16,7 @@ pipeline {
       steps {
           sh label: '', script: """
           node -v
+          gatsby -v
           if [ -d "$_DIR" ]; then
             echo "Removing existing project files."
             rm -rf "$_DIR"
