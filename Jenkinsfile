@@ -30,6 +30,8 @@ pipeline {
         steps {
           dir ("${_DIR}") {
            sh label: '', script: '''
+               nvm use --delete-prefix v12.18.3
+               node -v
                gatsby build'''
           }
        }
