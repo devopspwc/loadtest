@@ -15,7 +15,6 @@ pipeline {
      stage('Create Project') {
       steps {
           sh label: '', script: """
-          nvm use --delete-prefix v12.18.3
           node -v
           if [ -d "$_DIR" ]; then
             echo "Removing existing project files."
