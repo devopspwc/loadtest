@@ -8,7 +8,8 @@ def SURGE_DOMAIN = "tm008558.surge.sh"
 
 // Work
 pipeline {
-   agent { label 'jenkins-agent-8' }
+   agent { label 'jenkins-aws' }
+   //agent { label 'jenkins-agent-8' }
    triggers {
     GenericTrigger(
       genericVariables: [
